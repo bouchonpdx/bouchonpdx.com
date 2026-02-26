@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Team &mdash; Bouchon: A Wine Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-nav">
+    <button class="mobile-menu__close" onclick="document.getElementById('mobile-nav').classList.remove('mobile-menu--open')" aria-label="Close menu">&times;</button>
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="wine-club.html" class="mobile-menu__link">Wine Club</a>
+    <a href="team.html" class="mobile-menu__link">The Team</a>
+
+    <a href="https://www.instagram.com/bouchonpdx/" class="mobile-menu__link mobile-menu__link--insta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg> @bouchonpdx</a>
+  </div>
+
+  <!-- Grid -->
+  <main class="grid grid--narrow grid--team">
+
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav__logo">
+        <img src="img/Bouchon_HorizontalLogo_2.svg" alt="Bouchon: A Wine Shop">
+      </a>
+      <ul class="site-nav__list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="wine-club.html" class="site-nav__link">Wine Club</a></li>
+        <li><a href="team.html" class="site-nav__link">The Team</a></li>
+
+        <li>
+          <a href="https://www.instagram.com/bouchonpdx/" class="site-nav__link site-nav__link--ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+        </li>
+      </ul>
+      <button class="site-nav__toggle" onclick="document.getElementById('mobile-nav').classList.add('mobile-menu--open')" aria-label="Open menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+      </button>
+    </nav>
+
+    <div class="page-header page-header--spaced">
+      <h1 class="page-header__title">The Team</h1>
+      <p class="page-header__desc">The people behind the pours. We love wine, we love our neighborhood, and we love sharing both with you.</p>
+    </div>
+
+    <div class="member member--first">
+      <div class="member__photo">
+        <img src="img/mandy.avif" alt="Mandy">
+      </div>
+      <div class="member__bio">
+        <h3 class="member__name">Mandy</h3>
+        <p class="member__role">Owner</p>
+        <p class="member__text">Mandy loves wine with a special affinity for Burgundy. Her knowledge comes from years of being a small business owner in the industry and of course drinking copious amounts of the stuff. She spends most of her days running the business, chatting with customers, cleaning glasses and anything else that needs to get done.</p>
+      </div>
+    </div>
+
+    <div class="member member--reverse">
+      <div class="member__photo">
+        <img src="img/tara.avif" alt="Tara">
+      </div>
+      <div class="member__bio">
+        <h3 class="member__name">Tara</h3>
+        <p class="member__role">Wine Club Lead</p>
+        <p class="member__text">Tara is both the heart and the driving force behind our wine club. With an incredible depth of knowledge and a remarkable palate, she curates thoughtful, standout selections every month. A major part of the Bouchon team, she elevates everything we do truly the best of the best.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <div class="member__photo">
+        <img src="img/kevin.avif" alt="Kevin" style="object-position: left;">
+      </div>
+      <div class="member__bio">
+        <h3 class="member__name">Kevin</h3>
+        <p class="member__role">Bottle Shop Guru</p>
+        <p class="member__text">Kevin is the perfect Saturday guy at Bouchon - super chill and knows a lot. He's worked in the wine industry in all its capacities. He started in wine distribution where he transitioned to buyer and manager at Rocket Market, Spokane's premier wine shop. He recently moved to Portland and immediately found a home at Bouchon.</p>
+      </div>
+    </div>
+
+    <div class="member member--reverse member--last">
+      <div class="member__photo">
+        <img src="img/brennen.avif" alt="Brennen">
+      </div>
+      <div class="member__bio">
+        <h3 class="member__name">Brennen</h3>
+        <p class="member__role">Hospitality Hero</p>
+        <p class="member__text">Brennen is our newest and friendliest staff member yet! She truly is ready to help whenever she can. Her wine journey has just begun but she is learning fast and studying hard. If you need someone to lift your spirits we recommend Brennen :)</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col footer__col--connect">
+        <p class="label">Connect</p>
+        <a href="tel:5036435655" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>555-555-5555</span>
+        </a>
+        <a href="https://www.instagram.com/bouchonpdx/" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <span>@bouchonpdx</span>
+        </a>
+      </div>
+      <div class="footer__col">
+        <p class="label">Hours</p>
+        <p>Sun &ndash; Mon: Closed</p>
+        <p>Tue: 12pm &ndash; 6pm</p>
+        <p>Wed &ndash; Fri: 12pm &ndash; 9pm-ish</p>
+        <p>Sat: 12pm &ndash; 6pm</p>
+      </div>
+      <div class="footer__col">
+        <p class="label">Location</p>
+        <p>419 NW Saltzman Rd<br>Portland, OR 97229</p>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year">2026</span> Bouchon: A Wine Shop. All rights reserved.</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+
+</body>
+</html>

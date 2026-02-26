@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine Club &mdash; Bouchon: A Wine Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-nav">
+    <button class="mobile-menu__close" onclick="document.getElementById('mobile-nav').classList.remove('mobile-menu--open')" aria-label="Close menu">&times;</button>
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="wine-club.html" class="mobile-menu__link">Wine Club</a>
+    <a href="team.html" class="mobile-menu__link">The Team</a>
+
+    <a href="https://www.instagram.com/bouchonpdx/" class="mobile-menu__link mobile-menu__link--insta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg> @bouchonpdx</a>
+  </div>
+
+  <!-- Grid -->
+  <main class="grid grid--wine-club">
+
+    <nav class="site-nav">
+      <a href="index.html" class="site-nav__logo">
+        <img src="img/Bouchon_HorizontalLogo_2.svg" alt="Bouchon: A Wine Shop">
+      </a>
+      <ul class="site-nav__list">
+        <li><a href="index.html" class="site-nav__link">Home</a></li>
+        <li><a href="wine-club.html" class="site-nav__link">Wine Club</a></li>
+        <li><a href="team.html" class="site-nav__link">The Team</a></li>
+
+        <li>
+          <a href="https://www.instagram.com/bouchonpdx/" class="site-nav__link site-nav__link--ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+        </li>
+      </ul>
+      <button class="site-nav__toggle" onclick="document.getElementById('mobile-nav').classList.add('mobile-menu--open')" aria-label="Open menu">
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+        <span class="site-nav__toggle-bar"></span>
+      </button>
+    </nav>
+
+    <div class="page-header">
+      <h1 class="page-header__title">Wine Club</h1>
+      <p class="page-header__desc">We think our Wine Club is something special and here&rsquo;s why.</p>
+    </div>
+
+    <div class="media"><span class="media__placeholder">Picture of Bouchon here</span></div>
+
+    <div class="section section--intro">
+      <p class="section__text">The world of wine is too big and too interesting to choose from, so we decided not to. Instead, we chose to travel the world of wine since plane tickets are too expensive, but wine is not. Every month we select a new part of the world to unlock. We&rsquo;ve explored the ancient wine regions of Italy, Georgia and Greece as well as the new kids on the block Australia, South Africa and our own turf.</p>
+    </div>
+
+    <div class="section section--why">
+      <p class="label">Why Us</p>
+      <h2 class="section__title">Not Your Typical Wine Club</h2>
+      <p class="section__text">Why get the same wine varietals from your wine club year in and year out with nothing but a vintage change? The best way to learn about wine is drinking it, and we can guarantee that by joining our Wine Club you&rsquo;ll be introduced to varietals you&rsquo;ve never heard of from regions you never thought to buy from.</p>
+      <p class="section__text">An extra bonus? We&rsquo;re not a two hour drive away, we&rsquo;re right in your back yard! Which means your extra Wine Club perks can actually be used as often as you really choose.</p>
+      <p class="section__text">Our Wine Club is 2 bottle or 4 bottle &mdash; each include both reds and whites. If you are looking for an only white or only red club we are not for you&nbsp;:(&ensp;If you&rsquo;re looking for a club that is eager to show you new things and party on the way &mdash; we are!</p>
+    </div>
+
+    <div class="tier tier--four">
+      <h3 class="tier__title">4 Bottle Wine Club</h3>
+      <p class="tier__price">$130</p>
+      <ul class="tier__perks">
+        <li class="tier__perk">Wine Club Pick Up Party</li>
+        <li class="tier__perk">10% off food &amp; glass pours for you &amp; 2 guests</li>
+        <li class="tier__perk">Cork fees waived</li>
+      </ul>
+    </div>
+
+    <div class="tier tier--two">
+      <h3 class="tier__title">2 Bottle Wine Club</h3>
+      <p class="tier__price">$65</p>
+      <ul class="tier__perks">
+        <li class="tier__perk">Wine Club Pick Up Party</li>
+        <li class="tier__perk">10% off food &amp; glass pours</li>
+      </ul>
+    </div>
+
+    <div class="section section--party">
+      <p class="label">Pick Up Party</p>
+      <h2 class="section__title">Join the Party</h2>
+      <p class="section__text">If you&rsquo;d like to join us for a Wine Club Pick Up Party you&rsquo;re welcome to join us the second Wednesday &amp; Thursday of the month. Non Wine Club members pay a $30 fee. It&rsquo;s a great way to test us out and see if we&rsquo;re a good fit.</p>
+    </div>
+
+    <div class="signup">
+      <h2 class="signup__title">Ready to Join?</h2>
+      <p class="signup__text">If you&rsquo;re already in (why wouldn&rsquo;t you be!?!) feel free to stop by the shop to fill out our sign up sheet and we&rsquo;ll see you this next Pick Up Party!</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col footer__col--connect">
+        <p class="label">Connect</p>
+        <a href="tel:5036435655" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>555-555-5555</span>
+        </a>
+        <a href="https://www.instagram.com/bouchonpdx/" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <span>@bouchonpdx</span>
+        </a>
+      </div>
+      <div class="footer__col">
+        <p class="label">Hours</p>
+        <p>Sun &ndash; Mon: Closed</p>
+        <p>Tue: 12pm &ndash; 6pm</p>
+        <p>Wed &ndash; Fri: 12pm &ndash; 9pm-ish</p>
+        <p>Sat: 12pm &ndash; 6pm</p>
+      </div>
+      <div class="footer__col">
+        <p class="label">Location</p>
+        <p>419 NW Saltzman Rd<br>Portland, OR 97229</p>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year">2026</span> Bouchon: A Wine Shop. All rights reserved.</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+
+</body>
+</html>
