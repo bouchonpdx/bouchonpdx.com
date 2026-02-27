@@ -365,6 +365,43 @@ img { display: block; max-width: 100%; height: auto; }
   margin-bottom: 24px;
 }
 
+/* ── Not Found ── */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.not-found__title {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.not-found__text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 380px;
+  margin-bottom: 32px;
+}
+
+.not-found__link {
+  padding: 10px 24px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: var(--black);
+  border-radius: 4px;
+}
+
+.not-found__link:hover { background: #b08550; }
+
 /* ── Footer ── */
 .footer {
   max-width: 1200px;
@@ -441,6 +478,12 @@ img { display: block; max-width: 100%; height: auto; }
   .member__photo img { aspect-ratio: 1 / 1; }
   .page-header__title { font-size: 2.8rem; }
 
+  /* 404 layout */
+  .grid--404 { padding: var(--gap) 40px; }
+  .grid--404 > .site-nav { grid-column: 1; }
+  .not-found { padding: 120px 32px; }
+  .not-found__title { font-size: 2.8rem; }
+
   /* Wine Club layout */
   .grid--wine-club {
     grid-template-columns: repeat(4, 1fr);
@@ -463,4 +506,5 @@ img { display: block; max-width: 100%; height: auto; }
   .page-header__title { font-size: 3.2rem; }
   .member__name { font-size: 1.7rem; }
   .section__title { font-size: 1.8rem; }
+  .not-found__title { font-size: 3.2rem; }
 }
