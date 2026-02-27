@@ -471,7 +471,7 @@ img { display: block; max-width: 100%; height: auto; }
   .member {
     grid-column: 1 / 3;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
     padding: 14px 0;
   }
   .member--reverse .member__bio { order: -1; }
