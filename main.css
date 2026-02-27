@@ -408,7 +408,7 @@ img { display: block; max-width: 100%; height: auto; }
 .footer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 40px 24px;
+  padding: 48px var(--gap) 24px;
 }
 
 .footer__inner {
@@ -444,6 +444,7 @@ img { display: block; max-width: 100%; height: auto; }
 @media (min-width: 768px) {
   .site-nav__list { display: flex; }
   .site-nav__toggle { display: none; }
+  .footer { padding-left: 72px; padding-right: 72px; }
   .footer__inner { flex-direction: row; justify-content: space-between; }
 
   /* Home layout */
