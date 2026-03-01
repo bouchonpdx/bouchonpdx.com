@@ -408,7 +408,7 @@ img { display: block; max-width: 100%; height: auto; }
 .footer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px var(--gap) 24px;
+  padding: 48px calc(var(--gap) + 32px) 24px;
 }
 
 .footer__inner {
