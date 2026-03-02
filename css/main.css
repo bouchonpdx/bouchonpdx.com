@@ -252,6 +252,133 @@ img { display: block; max-width: 100%; height: auto; }
 
 .newsletter__button:hover { background: #b08550; }
 
+/* ── Constant Contact Form Overrides ── */
+.newsletter .ctct-inline-form,
+.newsletter .ctct-form-container,
+.newsletter .ctct-form-embed,
+.newsletter .ctct-form-defaults {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  max-width: none !important;
+}
+
+.newsletter .ctct-form-header {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 400 !important;
+  font-size: 1.6rem !important;
+  line-height: 1.15 !important;
+  color: var(--cream) !important;
+  margin-bottom: 14px !important;
+  padding: 0 !important;
+}
+
+.newsletter .ctct-form-text {
+  font-family: 'Jost', sans-serif !important;
+  font-weight: 300 !important;
+  color: var(--muted) !important;
+  font-size: 0.92rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 20px !important;
+  padding: 0 !important;
+}
+
+.newsletter .ctct-form-custom {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.newsletter .ctct-form-field {
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+}
+
+.newsletter .ctct-form-label {
+  display: none !important;
+}
+
+.newsletter .ctct-form-element {
+  flex: 1 !important;
+  width: 100% !important;
+  padding: 10px 14px !important;
+  font-family: 'Jost', sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 300 !important;
+  color: var(--cream) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(240, 232, 223, 0.2) !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.newsletter .ctct-form-element:focus {
+  border-color: var(--gold) !important;
+}
+
+.newsletter .ctct-form-button {
+  padding: 10px 24px !important;
+  font-family: 'Jost', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  background: var(--gold) !important;
+  color: var(--black) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  width: auto !important;
+  align-self: flex-start !important;
+}
+
+.newsletter .ctct-form-button:hover {
+  background: #b08550 !important;
+}
+
+.newsletter .ctct-gdpr-text {
+  font-family: 'Jost', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 0.68rem !important;
+  line-height: 1.6 !important;
+  color: rgba(240, 232, 223, 0.35) !important;
+  margin-top: 16px !important;
+  padding: 0 !important;
+}
+
+.newsletter .ctct-gdpr-text a {
+  color: rgba(240, 232, 223, 0.5) !important;
+  text-decoration: underline !important;
+}
+
+.newsletter .ctct-form-footer {
+  margin-top: 8px !important;
+  padding: 0 !important;
+}
+
+.newsletter .ctct-form-footer-link {
+  color: rgba(240, 232, 223, 0.35) !important;
+  font-size: 0.68rem !important;
+}
+
+.newsletter .ctct-form-footer-img {
+  height: 14px !important;
+  opacity: 0.3 !important;
+}
+
+.newsletter .ctct-form-errorMessage {
+  font-family: 'Jost', sans-serif !important;
+  font-size: 0.8rem !important;
+  color: #e88 !important;
+}
+
+.newsletter .ctct-form-success .ctct-form-header,
+.newsletter .ctct-form-success .ctct-form-text {
+  color: var(--cream) !important;
+}
+
 /* ── Member ── */
 .member {
   display: grid;
